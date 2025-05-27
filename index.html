@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PUBWEB fichiers source</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="intro">Les fichiers source téléchargeable ci-contre</div>
+
+      <nav id="navbar" class="visible">
+        <a href="../site 1/index.html#intro"><div class="logo">Home</div></a>
+        <div class="nav-links">
+          <ul>
+            <li class="lim"><a href="#origine">Origine</a></li>
+            <li class="lim"><a href="#evolution">Évolution</a></li>
+            <li class="lim"><a href="#impact">Impact</a></li>
+            <li class="lim"><a href="#risques">Risques</a></li>
+            <li class="lim"><a href="#comparaison">Comparaison</a></li>
+            <li class="lim">
+              <a href="#comparaison">Fichiers téléchargeables</a>
+            </li>
+            <div class="toggle_btn">
+              <img src="./menu-btn.png" alt="menu" id="menuIcon" />
+            </div>
+            <img src="./274c_flat.png" alt="croix" />
+          </ul>
+        </div>
+        <div class="dropdown_menu">
+          <ul>
+            <li><a href="../site 1/index.html#origine">Origine</a></li>
+            <li><a href="../site 1/index.html#evolution">Évolution</a></li>
+            <li><a href="../site 1/index.html#impact">Impact</a></li>
+            <li><a href="../site 1/index.html#risques">Risques</a></li>
+            <li><a href="../site 1/index.html#comparaison">Comparaison</a></li>
+            <li><a href="#fichiers">Fichiers téléchrageables</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="fichiers" class="hidden-section">
+        <h2>Téléchargez ici tout les fichiers source du site</h2>
+        <div class="site1">
+          <table
+            border="none"
+            cellpadding="10"
+            cellspacing="4"
+            style="text-align: center"
+          >
+            <thead>
+              <h3>Page principale</h3>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a
+                    href="../site 1/index.html"
+                    download="index.html"
+                    target="_blank"
+                    >L'index.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="../site 1/index.js"
+                    download="index.js"
+                    target="_blank"
+                    >L'index.js (le java script)</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="../site 1/style.css"
+                    download="style.css"
+                    target="_blank"
+                    >Le fichiers pour le css</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="../site 1/274c_flat.png"
+                    download="274c_flat.png"
+                    target="_blank"
+                    >L'imagne png croix du dropdown menu</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="../site 1/menu-btn.png"
+                    download="menu-btn.png"
+                    target="_blank"
+                    >L'image png bouton du dropdown menu</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br /><br />
+        <div class="site2">
+          <table
+            border="none"
+            cellpadding="10"
+            cellspacing="4"
+            style="text-align: center"
+          >
+            <thead>
+              <h3>Page secondaire</h3>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a
+                    href="../site 2/index.html"
+                    download="index.html"
+                    target="_blank"
+                    >Index.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="../site 2/index.js"
+                    download="index.js"
+                    target="_blank"
+                    >Index.js</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="../site 2/style.css"
+                    download="style.css"
+                    target="_blank"
+                    >Style.css</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="../site 2/274c_flat.png"
+                    download="274c_flat.png"
+                    target="_blank"
+                    >Croix dropdown menu</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="../site 2/menu-btn.png"
+                    download="menu-btn.png"
+                    target="_blank"
+                    >Bouton bars dropdown menu</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="attention" class="hidden-section">
+        <p>
+          <i
+            >Télécharger les fichiers de chaque page dans un dossier différents
+            et placer ces deux même dossier dans un dossier commun</i
+          >
+        </p>
+      </section>
+    </main>
+    <footer>
+      <a href="https://github.com/Kacaouhete/Pub-cie" target="_blank"
+        ><i>Mon profil Github et les fichiers</i></a
+      >
+    </footer>
+    <script src="./index.js"></script>
+    <script>
+      console.log("JS actif");
+      document.querySelector(".toggle_btn").onclick = () => {
+        console.log("Clic détecté");
+        document.querySelector(".dropdown_menu").classList.toggle("open");
+      };
+    </script>
+  </body>
+</html>
